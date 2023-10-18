@@ -1,0 +1,22 @@
+server:
+  port: 8089
+vmconfig:
+  host: http://192.168.110.146:9200
+spring:
+  datasource:
+    url: jdbc:mysql://43.138.173.244:3306/cuit_hotel?useSSL=false
+    username: root
+    password: 123
+    driver-class-name: com.mysql.jdbc.Driver
+
+logging:
+  level:
+    cn.itcast: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: cn.itcast.hotel.pojo
+
+
